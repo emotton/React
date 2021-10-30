@@ -14,6 +14,7 @@ import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/formulario/Input';
 import Contador from './components/contador/Contador';
+import Mega from './components/mega/Mega';
 import './App.css';
 
 /*eslint-disable */
@@ -66,6 +67,9 @@ export default () =>
             </Card>
             <Card titulo="Contador" color="#424242">
                 <Contador numeroInicial={10}></Contador>
+            </Card>
+            <Card titulo="Mega" color="#B9006E">
+                <Mega qtde={6}></Mega>
             </Card>
         </div>
     </div>;
