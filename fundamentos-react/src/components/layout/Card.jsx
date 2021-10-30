@@ -1,6 +1,7 @@
 import React from 'react';
 import './Card.css';
 
+/*eslint-disable */
 export default props => {
     
     const cardStyle = {

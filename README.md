@@ -226,7 +226,157 @@ export default props => {
     </Card>
 </div>;
 
+Ponto-15
+--------
+export default props => {
+    return (
+        <div>
+            <FamiliaMembro nome="Eduardo" sobrenome={props.sobrenome} />
+            <FamiliaMembro nome="Bheatriz" sobrenome={props.sobrenome} />
+            <FamiliaMembro nome="Henrique" sobrenome={props.sobrenome} />
+        </div>
+    )
+}
+
+Uma das forma de passar um parâmetro do pai para o filho
+
+Outra forma, é repassar todo props por spread
+
+export default props => {
+    return (
+        <div>
+            <FamiliaMembro nome="Eduardo" sobrenome={props.sobrenome} />
+            <FamiliaMembro nome="Bheatriz" {...props} />
+            <FamiliaMembro nome="Henrique" sobrenome="Fratoni Motton" />
+        </div>
+    )
+}
+
+Ponto-16
+--------
+    <Familia sobrenome="Motton">
+        <FamiliaMembro nome="Eduardo" />
+        {/*
+        <FamiliaMembro nome="Célia" />
+        <FamiliaMembro nome="Bheatriz" />
+        <FamiliaMembro nome="Henrique" />
+        */}
+    </Familia>
+
+Forma de comentar um código React (Atalho meu: Ctrl + ";")
+
+Ponto-17
+--------
+export default props => {
+    return (
+        <div>
+            {React.cloneElement(props.children)}
+        </div>
+    )
+}
+
+Pode utilizar como a seguir, é apenas um exemplo
+
+import React, {cloneElement} from 'react'
+
+/*eslint-disable */
+export default props => {
+    return (
+        <div>
+            {cloneElement(props.children)}
+        </div>
+    )
+}
+
+Ponto-18
+--------
+export default props => {
+    return (
+        <div>
+            {cloneElement(props.children, {...props})}
+        </div>
+    )
+}
+
+Forma de passar as props para o filho unitário
+
+Ponto-19
+--------
+export default props => {
+    return (
+        <div>
+            {React.Children.map(props.children, child => {
+                    return cloneElement(child, props);
+            })}
+        </div>
+    )
+}
+
+Iterando sobre o array de children e passando as props do pai para cada um
+
+Outro formato utilizando direto o array
+
+export default props => {
+    return (
+        <div>
+            {props.children.map(child => {
+                    return cloneElement(child, props);
+            })}
+        </div>
+    )
+}
+
+Dá um problema devido a falta de um atributo "key", que pode ser passado assim :
+
+export default props => {
+    return (
+        <div>
+            {props.children.map((child,i) => {
+                    return cloneElement(child, {...props, key: i});
+            })}
+        </div>
+    )
+}
+
+Ponto-20
+--------
+export default props => {
+    const li1 = <li>{alunos[0].id} - {alunos[0].nome} - {alunos[0].nota}</li>
+    return (
+        <div>
+            <ul>
+                {li1}
+            </ul>
+        </div>
+    )
+}
+
+Demonstração de uma montagem manual
+
+Ponto-22
+--------
+export default props => {
+    const li1 = <li>{alunos[0].id} - {alunos[0].nome} - {alunos[0].nota}</li>
+    const lis = alunos.map((aluno, i) => {
+        return <li key={i}>{aluno.id} - {aluno.nome} - {aluno.nota}</li>
+    })
+    return (
+        <div>
+            <ul>
+                {lis}
+            </ul>
+        </div>
+    )
+}
+
+Forma através de um map criado um array de "<li>"
+
 
 Ferramentas
 ===========
 https://fonts.google.com/
+https://digitalsynopsis.com/design/beautiful-color-gradient-palettes/
+
+Referências
+===========
+https://github.com/cod3rcursos/curso-react-redux
