@@ -9,6 +9,8 @@ import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 import './App.css';
 
 /*eslint-disable */
@@ -46,6 +48,12 @@ export default () =>
                 <ParOuImpar numero={20} />
                 <UsuarioInfo usuario={{ nome: 'Fernando' }} />
                 <UsuarioInfo usuario={{ email: 'fer@gmail.com' }} />
+            </Card>
+            <Card titulo="Comunicação Direta" color="#59323C">
+                <DiretaPai></DiretaPai>
+            </Card>
+            <Card titulo="Comunicação Indireta" color="#8BAD39">
+                <IndiretaPai></IndiretaPai>
             </Card>
         </div>
     </div>;
