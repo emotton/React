@@ -371,11 +371,87 @@ export default props => {
 
 Forma através de um map criado um array de "<li>"
 
+CONCEITOS de HOOKS
+==================
+useState -> estado no componente.
+
+useEffect -> efeito colateral, dispara de acordo com as dependências.
+
+useRef -> objeto imutável, por referência, atributo current, a modificação do mesmo não reflete em disparar
+nova renderização. Pode ser utilizado com atributo ref no componente HTML, onde a variável do useRef apontará
+diretamente para o componente HTML, podem por exemplo setar focus.
+
+useMemo -> Retorna um valor memoizada
+
+useCallback -> Retorna uma função memoizada; gera uma espécie de cache do componente
+
+
+Exemplo de Context API
+======================
+import './App.css'
+import React, { useState } from 'react'
+import { BrowserRouter as Router } from  'react-router-dom'
+
+import Menu from '../components/layout/Menu'
+import Content from '../components/layout/Content'
+
+import DataContext, { data } from '../data/DataContext'
+
+
+const App = props => {
+    const [state, setState] = useState(data)
+
+    return (
+
+            <DataContext.Provider value={data}>
+                <div className="App">
+                    <Router>
+                        <Menu />
+                        <Content />
+                    </Router>
+                </div>
+            </DataContext.Provider>
+
+    )
+}
+
+export default App
+
+--------------------------------------------------------
+import React, { useContext } from 'react'
+import PageTitle from '../../components/layout/PageTitle'
+import SectionTitle from '../../components/layout/SectionTitle'
+
+import DataContext from '../../data/DataContext'
+
+const TesteContext = (props) => {
+
+    const context = useContext(DataContext);
+   
+    return (
+        <div className="UseContext">
+            <PageTitle
+                title="Hook UseContext - Teste Context"
+                subtitle="Aceita um objeto de contexto e retorna o valor atual do contexto!"
+            />
+
+            <SectionTitle title="Execício #01" />
+            <div className="center">
+                <span className="text">{context.text}</span>
+                <span className="text">{context.number}</span>
+            </div>
+        </div>
+    )
+}
+
+export default TesteContext
+
 
 Ferramentas
 ===========
 https://fonts.google.com/
 https://digitalsynopsis.com/design/beautiful-color-gradient-palettes/
+https://uigradients.com/
 
 Referências
 ===========

@@ -1,0 +1,57 @@
+.App {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color:black;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.Menu ul {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Menu hr {
+    width: 100px;
+}
+
+/* li dentro de App, mas não necessáriamente filho */
+.App li {
+    color: green;
+}
+/* desta forma, li deveria ser filho imediato */
+.App > li {
+    color: blue;
+}
+/* desta forma, todos os span dentro de .App */
+.App span {
+    color: blueviolet;
+}
+
+.Content {
+    width: 100px;
+}
+
+.Content span {
+    color: yellow;
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+}
+/* Todos os span dentro de Footer */
+.Footer span {
+    color: brown;
+}
+/* Dentro de Footer, todos os span que forem filhos diretos de li */
+.Footer li > span {
+    color: darkorange;
+}
+
+.Footer li {
+    list-style: none;
+}
