@@ -446,6 +446,10 @@ const TesteContext = (props) => {
 
 export default TesteContext
 
+NextJS
+======
+npm create-next-app <projeto>
+
 
 Ferramentas
 ===========
