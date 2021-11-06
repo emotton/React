@@ -448,8 +448,26 @@ export default TesteContext
 
 NextJS
 ======
-npm create-next-app <projeto>
+npx create-next-app <projeto>
 
+
+Ant Design
+==========
+https://ant.design/docs/react/use-with-create-react-app
+
+yarn add antd
+
+ou
+
+npm i antd
+
+
+https://www.primefaces.org/primereact/?gclid=CjwKCAjwiY6MBhBqEiwARFSCPvYu0UV1c3lLViPmDz1h3Cv548IqZucj7jfQNj6_PH2ND6LfNeivQxoCfMAQAvD_BwE
+
+-> npm install primeflex@2.0.0 --save
+-> import 'primeflex/primeflex.css';
+
+https://js.devexpress.com/NonCommercial/
 
 Ferramentas
 ===========
