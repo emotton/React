@@ -1,8 +1,8 @@
 import './App.css';
 import { ApplicationProvider } from './contexts/usuarios';
-import Header from './views/Header';
 import { BrowserRouter as Router } from 'react-router-dom'
-import Content from './views/Content';
+import Header from './components/Header';
+import Content from './components/Content';
 
 function App() {
   return (
