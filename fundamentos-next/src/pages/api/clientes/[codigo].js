@@ -9,8 +9,10 @@ export default function handler(req, res){
 }
 
 function handleGET(req, res){
+    let codigo = req.query.codigo
     res.status(200).json({
-        id: 1,
-        nome: 'Eduardo'
+        id: codigo,
+        nome: `Eduardo - ${codigo}`,
+        email: `emotton${codigo}@gmail.com`
     })
 }

@@ -461,6 +461,13 @@ ou
 
 npm i antd
 
+Next.JS
+=======
+npm run build
+npm start
+
+# desta forma será executado em cenário de produção
+
 
 https://www.primefaces.org/primereact/?gclid=CjwKCAjwiY6MBhBqEiwARFSCPvYu0UV1c3lLViPmDz1h3Cv548IqZucj7jfQNj6_PH2ND6LfNeivQxoCfMAQAvD_BwE
 
@@ -474,6 +481,9 @@ Ferramentas
 https://fonts.google.com/
 https://digitalsynopsis.com/design/beautiful-color-gradient-palettes/
 https://uigradients.com/
+https://content.breatheco.de/en/how-to/nvm-install-windows
+
+https://console.firebase.google.com/?pli=1
 
 Referências
 ===========
