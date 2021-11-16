@@ -488,3 +488,14 @@ https://console.firebase.google.com/?pli=1
 Referências
 ===========
 https://github.com/cod3rcursos/curso-react-redux
+
+A estudar
+=============================
+React.RefForwardingComponent e forwardRef
+
+Firefox : ADD-ONS
+=================
+
+https://addons.mozilla.org/en-US/firefox/addon/react-devtools/
+
+https://addons.mozilla.org/en-US/firefox/addon/react-context-devtool/
