@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Comp1 from './Comp1';
 import Comp2 from './Comp2';
 
-const CompPai = () => {
+const Memo = () => {
     const [count1, setCount1] = useState(0);
     const [count2, setCount2] = useState(0);
 
@@ -19,4 +19,4 @@ const CompPai = () => {
     );
 }
 
-export default CompPai;
+export default Memo;

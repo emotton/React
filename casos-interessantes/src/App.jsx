@@ -1,16 +1,20 @@
 import './App.css';
-import CompPai2 from './Components/callback/CompPai2';
-import CompPai from './Components/memo/CompPai';
-import CompPai3 from './Components/useMemo/CompPai3';
+import Callback from './Components/callback/Callback';
+import Memo from './Components/memo/Memo';
+import UseMemo from './Components/useMemo/UseMemo';
+import SemUseState from './Components/useState/SemUseState';
+import UseState from './Components/useState/UseState';
 
 function App() {
   return (
     <div className="App">
       <h1>Exemplos - Casos Interessantes</h1>
       <h4>Componentes renderizados sem necessidade</h4>
-      <CompPai />
-      <CompPai2 />
-      <CompPai3 />
+      <Memo />
+      <Callback />
+      <UseMemo />
+      <SemUseState /> 
+      <UseState />
     </div>
   );
 }

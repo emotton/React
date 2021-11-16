@@ -22,3 +22,9 @@ useContext e useReducer
 --------------------------------------------
 https://www.youtube.com/watch?v=1FecGab9eDg
 
+
+
+Extensões
+=========
+React Hooks Snippets
+Quokka (Interessante para ensinar)

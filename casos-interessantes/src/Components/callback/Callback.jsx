@@ -3,7 +3,7 @@ import { useState, useCallback } from 'react';
 import Comp1 from './Comp1';
 import Comp2 from './Comp2';
 
-const CompPai2 = () => {
+const Callback = () => {
     const [count1, setCount1] = useState(0);
     const [count2, setCount2] = useState(0);
 
@@ -25,4 +25,4 @@ const CompPai2 = () => {
     );
 }
 
-export default CompPai2;
+export default Callback;
