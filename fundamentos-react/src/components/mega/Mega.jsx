@@ -1,7 +1,7 @@
 import "./Mega.css";
 import React, { useState } from "react";
 
-export default (props) => {
+export default function Mega(props){
     function gerarNumeroNaoContido(min, max, array) {
         const aleatorio = parseInt(Math.random() * (max + 1 - min)) + min;
         return array.includes(aleatorio)
