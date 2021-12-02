@@ -499,3 +499,9 @@ Firefox : ADD-ONS
 https://addons.mozilla.org/en-US/firefox/addon/react-devtools/
 
 https://addons.mozilla.org/en-US/firefox/addon/react-context-devtool/
+
+VIDEOS
+======
+
+https://www.youtube.com/watch?v=KhuHgLdwIsg&list=PLE0DHiXlN_qpm0nMlvcVxG_O580IXmeRU
+

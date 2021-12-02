@@ -1,4 +1,5 @@
 import { Form, Input, Button, Checkbox } from 'antd';
+import SwitchX from './Switch';
 
 export default function Formulario() {
   const onFinish = (values) => {
@@ -43,6 +44,7 @@ export default function Formulario() {
         <Button type="primary" htmlType="submit">
           Submit
         </Button>
+        <SwitchX />
       </Form.Item>
     </Form>
   );

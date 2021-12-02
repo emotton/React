@@ -1,5 +1,7 @@
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined, LaptopOutlined, NotificationOutlined } from '@ant-design/icons';
+import Calendario from './components/Calendario';
+
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -57,7 +59,7 @@ export default function App() {
               minHeight: 280,
             }}
           >
-            Content
+            <Calendario />
           </Content>
         </Layout>
       </Layout>
